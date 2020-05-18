@@ -5,6 +5,10 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'my-first-app';
+export class AppComponent {  
+  loadedFeature: string = 'shopping-list';
+
+  onFeatureSelect(feature: string) {    
+    this.loadedFeature = feature;
+  }
 }
